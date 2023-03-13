@@ -8,11 +8,6 @@ E.fn.load = function(url, params, callback) {
         self = this,
         idx = url.indexOf(" ");
 
-    if (typeof url === "string") {
-        // convierte "url" en un array utilizando el separador adecuado
-        url = url.split(",");
-    }
-
     if (idx > -1) {
         selector = url.slice(idx);
         url = url.slice(0, idx);
